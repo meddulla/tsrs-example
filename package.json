@@ -1,0 +1,15 @@
+{
+  "name": "tsrs-example",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A small Cloudflare Worker typechecked and compiled with @tsrs/wasm, the Rust port of the TypeScript 7 compiler.",
+  "scripts": {
+    "typecheck": "tsrs-wasm --noEmit",
+    "build": "tsrs-wasm"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261108.1",
+    "@tsrs/wasm": "0.18.0-ts7.1.0-dev.20260929"
+  }
+}
